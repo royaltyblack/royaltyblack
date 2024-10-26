@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green E-Commerce Store</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.8em;
+            color: #00cc66; /* Green accent */
+        }
+
+        nav a {
+            color: #ffffff;
+            margin-left: 1em;
+            text-decoration: none;
+        }
+
+        /* Main section */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2em 0;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 1em;
+            margin: 1em 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f9f9f9;
+        }
+
+        .product-card img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product-card h3 {
+            font-size: 1.2em;
+            color: #000;
+        }
+
+        .product-card p {
+            color: #666;
+        }
+
+        .product-card .price {
+            font-weight: bold;
+            color: #00cc66;
+        }
+
+        .add-to-cart {
+            margin-top: 1em;
+            padding: 0.8em 2em;
+            border: none;
+            background-color: #00cc66;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-cart:hover {
+            background-color: #00994d;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            color: #ffffff;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Green Store</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Featured Products</h2>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300" alt="Product 1">
+            <h3>Product Name 1</h3>
+            <p>High-quality item that’s perfect for you.</p>
+            <span class="price">$29.99</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300" alt="Product 2">
+            <h3>Product Name 2</h3>
+            <p>A must-have product to elevate your lifestyle.</p>
+            <span class="price">$49.99</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300" alt="Product 3">
+            <h3>Product Name 3</h3>
+            <p>Enjoy premium quality with this item.</p>
+            <span class="price">$39.99</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Green Store. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Add to Cart Button -->
+    <script>
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Item added to cart!');
+            });
+        });
+    </script>
+
+</body>
+</html>
